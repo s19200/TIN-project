@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src = "../app.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Select a table you want to remove data from</h1>
+<form method="POST" >
+    <select name="deleteFromThis">
+        <option value = "Student">Student</option>
+        <option value = "Project">Project</option>
+        <option value = "Student_project">Student_project</option>
+    </select>
+    <input name = "idOfRecord" placeholder="Id of the record">
+    <button  id = "button7" onclick="formData(); return false">Submit</button>
+</form>
+</body>
+</html>

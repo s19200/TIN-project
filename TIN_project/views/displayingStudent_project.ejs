@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student_project table data</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="table-data">
+    <h1>Student_project table data</h1>
+    <table border="3">
+        <tr>
+            <th>Student_Project id</th>
+            <th>Student id</th>
+            <th>Project id</th>
+            <th>Role of student</th>
+        </tr>
+
+        <%
+        if(userData.length!=0){
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=data.id_Student_Project %></td>
+            <td><%=data.id_student %></td>
+            <td><%=data.id_project %></td>
+            <td><%=data.role_of_student %></td>
+        </tr>
+        <%}) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

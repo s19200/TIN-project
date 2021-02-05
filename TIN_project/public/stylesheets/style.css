@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E1C699;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1{
+  font-family: Courier;
+  font-style: italic;
+}
+
+button{
+  background: #4a2c2a;
+  color: white;
+  font-style: italic;
+}
+
+::placeholder{
+  color: #4a2c2a;
+}
+
+table{
+  border-style: ridge;
+  border-color: #4a2c2a;
+}
+
+

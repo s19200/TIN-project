@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src = "../app.js"></script>
+    <meta charset="UTF-8">
+  </head>
+  <body style="background-color: #E1C699;">
+
+
+  <h1>Select a table you want to insert data to:</h1>
+  <form id="insert" method="GET" >
+  <button type = 'submit'  formaction="/start/insertingStudent">Student</button>
+    <button type = 'submit'  formaction="/start/insertingProject">Project</button>
+    <button type = 'submit'  formaction="/start/insertingStudent_project">Student_project</button>
+  </form>
+
+
+  <h1>Select a table you want to update data in:</h1>
+  <form id="insert" method="GET" >
+    <button type = 'submit'  formaction="/start/updatingStudent">Student</button>
+    <button type = 'submit'  formaction="/start/updatingProject">Project</button>
+    <button type = 'submit'  formaction="/start/updatingStudent_project">Student_project</button>
+  </form>
+
+  <h1>Click if you want to delete a record:</h1>
+  <form id="delete" method="GET">
+    <button id = "delete" formaction="/start/deletingRecord">Delete a record</button>
+  </form>
+
+  <h1>Select a table you want to display data of:</h1>
+  <form id="display" method="post">
+    <button id = "button7" name="Student" formmethod="post" formaction="/start/displayingStudent" onclick="formData(); return false">Student</button>
+    <button  id = "button8" name="Project" formmethod="post" formaction="/start/displayingProject" onclick="formData(); return false">Project</button>
+    <button  id = "button9" name ="Student_project" formmethod="post" formaction="/start/displayingStudent_project" onclick="formData(); return false">Student_project</button>
+  </form>
+
+  <h1>Select a table and an id of record to get detailed information:</h1>
+  <form method="POST" >
+    <input name = "detailsOnThis" placeholder="Id of the record">
+    <button name="button" value="Student" type="submit" formmethod="post" formaction="/start/displayingStudentDetail" onclick="formData(); return false">Student</button>
+    <button  name="button" value="Project" type="submit" formmethod="post" formaction="/start/displayingProjectDetails" onclick="formData(); return false">Project</button>
+    <button  name ="button" value="Student_project" type="submit" formmethod="post" formaction="/start/displayingStudent_projectDetails" onclick="formData(); return false">Student_project</button>
+  </form>
+  </body>
+</html>

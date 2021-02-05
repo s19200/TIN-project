@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script defer src = "../app.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<h1>Select a record you want to update and enter new value(s)</h1>
+<form method="POST">
+    <input id="updateThisStudent" name="updateThisStudent" placeholder="Student id"> <br> <br>
+    <input id="updateName" name="updateName" placeholder="New name (2-30 symbols)">
+    <input size ="25" id="updateSurname" name="updateSurname" placeholder="New surname (2-30 symbols)">
+
+    <button id = "button4" style="width:100px; height:25px" onclick="formData(); return false">Submit</button>
+</form>
+<script defer src = "../app.js"></script>
+</body>
+</html>
